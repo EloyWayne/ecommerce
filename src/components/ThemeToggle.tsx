@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Moon, Sun, Loader2 } from "lucide-react";
 import { Dialog } from "@radix-ui/react-dialog";
 import { DialogContent, DialogOverlay, DialogTitle } from "./ui/dialog";
+import { auth } from "@/auth";
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
